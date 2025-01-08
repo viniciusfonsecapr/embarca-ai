@@ -14,8 +14,19 @@
   }
 }
 
+.divMain {
+  background-image: url(./images/stars.jpg);
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
