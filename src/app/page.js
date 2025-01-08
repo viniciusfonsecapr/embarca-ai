@@ -11,6 +11,7 @@ export default function Home() {
           <GuerraNasEstrelasLogo />
         </div>
         <section>SEARCH BAR</section>
+        <section>CARD + NOMES E INFORMAÇÕES</section>
 
       </main>
 
