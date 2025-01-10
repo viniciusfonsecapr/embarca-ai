@@ -3,18 +3,20 @@ import axios from 'axios'
 export const searchPeople = async (people) => {
     try {
 
-        let url = `https://swapi.py4e.com/api/people/${people}`
+        let url = `https://swapi.py4e.com/api/people/?search=${people}`
         const response = await fetch(url)
+
         return await response.json()
 
+
     } catch (error) {
-        console.log("error: ", error)
+        console.log("error: cai aqui ", error)
     }
 }
 
-export const getPeople = async (limit = 50, offset = 0) => {
+export const getPeople = async (people) => {
     try {
-        let url = `https://swapi.py4e.com/api/people?limit=${limit}&offset=${offset}`
+        let url = `https://swapi.py4e.com/api/people/`
         const response = await fetch(url)
         return await response.json()
     } catch (error) {

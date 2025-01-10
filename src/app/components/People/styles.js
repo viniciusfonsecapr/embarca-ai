@@ -2,20 +2,20 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   
-  flex:1;
   border-radius: 10px;
-  background-color: blue;
-
+  background-color: gray;
+  color: white;
 
   div.card-top {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-right:1rem;
     color: white;
-    width: 1000px;
-    background: blue;
+    width: 50px;
+    height: 300px;
+    padding-left:  35px;
+
   }
  
   
