@@ -3,13 +3,20 @@ import styled from "styled-components";
 // import Image from '../../images/stars.jpg'
 
 export const Container = styled.div`
-  font-family: "Roboto";
+  font-family: 'Audiowide', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   background-color: black; 
   height: 100vh;
+
+  div.title-grid{
+    color: white;
+    padding-left: 3vw;
+    font-size: 30px;
+   
+  }
 
   div.people-grid {
     display: grid;

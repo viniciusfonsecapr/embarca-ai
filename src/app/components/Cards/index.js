@@ -10,6 +10,9 @@ export default function Cards({ people, loading, next, prev }) {
             <div className="header">
                 <Pagination onLeftClick={prev} onRightClick={next} />
             </div>
+            <div className='title-grid'>
+                PERSONAGENS
+            </div>
             {loading ? (
                 <div className='divLoading'>
                     <LoadingSpinner />

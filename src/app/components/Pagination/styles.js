@@ -6,6 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
+  margin-top: 20px;
   
   button {
     cursor: pointer;
@@ -13,7 +14,7 @@ export const Container = styled.div`
     border: none;
     border-radius: 5px;
     color: white;
-    padding: 8px 12px;
+    padding: 12px 24px;
   }
 
   button:hover {

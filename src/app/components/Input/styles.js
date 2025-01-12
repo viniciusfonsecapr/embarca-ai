@@ -7,6 +7,9 @@ export const Container = styled.div`
   display: flex;
   color: white;
   padding: 40px;
+  font-family: "Audiowide", serif;
+  font-weight: 400;
+  font-style: normal;
 
   div {
     display: flex;
@@ -34,6 +37,7 @@ export const Container = styled.div`
     height: 50px;
     margin-top: 20px;
     border-radius: 5px;
+;
   }
 
   button:hover {
