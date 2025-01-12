@@ -1,0 +1,29 @@
+.no-characters-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  height: 25vh;
+  background-image: url(../../images//stars.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.no-characters-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.no-characters-message {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.no-characters-subtext {
+  font-size: 16px;
+  color: #dbdada;
+}

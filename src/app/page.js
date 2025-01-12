@@ -1,10 +1,12 @@
 "use client"
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { searchPeople, getPeople } from "./services/api";
 import Cards from "./components/Cards";
 import Searchbar from "./components/Input";
 import GuerraNasEstrelasLogo from "./components/Logo";
-import axios from "axios";
+import NoCharacters from './components/NoSearch'
+
 
 function Home() {
   const [loading, setLoading] = useState(false);
@@ -18,19 +20,16 @@ function Home() {
       setLoading(true);
       setNotFound(false);
 
-      // Busca os dados da API (primeira página ou URL específica)
       const data = url ? await fetch(url).then((res) => res.json()) : await getPeople();
 
-      // Mapeia os resultados para incluir informações completas
       const results = await Promise.all(
         data.results.map(async (person) => {
-          const homeWorld = await getHomeWorld(person.homeworld);
+          const homeWorld = person.homeworld ? await getHomeWorld(person.homeworld) : "Desconhecido";
           const species = person.species.length > 0 ? await getSpecies(person.species[0]) : "Human";
           return { ...person, homeWorld, species };
         })
       );
 
-      // Atualiza o estado
       setPeoples(results);
       setNextPageUrl(data.next);
       setPrevPageUrl(data.previous);
@@ -45,7 +44,7 @@ function Home() {
   const getHomeWorld = async (url) => {
     try {
       const response = await axios.get(url);
-      return response.data.name;
+      return response.data.name || "Desconhecido";
     } catch (error) {
       console.error("Erro ao buscar homeworld:", error);
       return "Desconhecido";
@@ -55,12 +54,13 @@ function Home() {
   const getSpecies = async (url) => {
     try {
       const response = await axios.get(url);
-      return response.data.name;
+      return response.data.name || "Desconhecida";
     } catch (error) {
       console.error("Erro ao buscar species:", error);
       return "Desconhecida";
     }
   };
+
 
   useEffect(() => {
     fetchPeoples();
@@ -91,7 +91,7 @@ function Home() {
       } else {
         const characters = await Promise.all(
           result.results.map(async (person) => {
-            const homeWorld = await getHomeWorld(person.homeworld);
+            const homeWorld = person.homeworld.length > 0 ? await getHomeWorld(person.homeworld[0]) : "Planet";
             const species = person.species.length > 0 ? await getSpecies(person.species[0]) : "Human";
             return { ...person, homeWorld, species };
           })
@@ -115,7 +115,8 @@ function Home() {
         </div>
         <Searchbar onSearch={onSearchHandler} />
         {notFound ? (
-          <h1>Não encontramos este personagem :\</h1>
+          <NoCharacters />
+          // <h1>Não encontramos este personagem :\</h1>
         ) : (
           <Cards
             people={peoples}

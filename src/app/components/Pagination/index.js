@@ -8,8 +8,11 @@ export default function Pagination(props) {
     return (
         <Container>
             <button onClick={onLeftClick}>◀</button>
-            <div>
-                {page} / {totalPages}
+            <div className="buttons-page">
+                {page}
+            </div>
+            <div className="buttons-page">
+                {totalPages}
             </div>
             <button onClick={onRightClick}>▶</button>
         </Container>

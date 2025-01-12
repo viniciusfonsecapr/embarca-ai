@@ -21,7 +21,7 @@ export default function Searchbar(props) {
     return (
         <Container>
             <div className="input-people">
-                <input placeholder="Nome do Personagem." onChange={onChangeHandler} />
+                <input placeholder="Digite o Nome do Personagem ..." onChange={onChangeHandler} />
             </div>
             <div className="button-people">
                 <button onClick={onButtonClickHandler}>Buscar</button>

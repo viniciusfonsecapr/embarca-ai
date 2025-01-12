@@ -8,16 +8,16 @@ export default function People(props) {
     return (
         <Container>
             <div className="card-top">
-                <div style={{ marginBottom: '25px', fontSize: '20px', fontWeight: 'bold' }}>{people.name}</div>
-                <div>{people.gender}</div>
-                <div>{people.height}</div>
-                <div>{people.mass}</div>
-                <div>{people.birth_year}</div>
-                <div>{people.eye_color}</div>
-                <div>{people.hair_color}</div>
-                <div>{people.skin_color}</div>
-                <div>{people.species}</div>
-                <div>{people.homeworld}</div>
+                <div className="name-character">{people.name}</div>
+                <div>Genero: {people.gender}</div>
+                <div>Altura: {people.height}</div>
+                <div>Peso: {people.mass}</div>
+                <div>Aniversario: {people.birth_year}</div>
+                <div>Cor dos Olhos:{people.eye_color}</div>
+                <div>Cor do Cabelo:{people.hair_color}</div>
+                <div>Cor da Pele:{people.skin_color}</div>
+                <div>Especie: {people.species}</div>
+                <div>Planeta:{people.homeWorld}</div>
 
             </div>
         </Container>

@@ -6,7 +6,7 @@ const GuerraNasEstrelasLogo = () => (
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 200 100"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        style={{ display: 'block', margin: '0 auto' }}
+        style={{ display: 'absolute', margin: '0 auto' }}
     >
         {/* Fundo transparente para melhor adaptação */}
         <rect width="200" height="100" fill="none" />

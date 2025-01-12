@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-content: space-around;
   align-items: center;
   display: flex;
-  color: black;
+  color: white;
   padding: 40px;
 
   div {
@@ -16,8 +16,8 @@ export const Container = styled.div`
   }
 
   input {
-    width: 300px;
-    background-color: blue;
+    width:50vw;
+    background-color: #1D1E1F;
     padding-left: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -26,13 +26,18 @@ export const Container = styled.div`
 
   button {
     display: flex;
-    background-color: yellow;
+    background-color: #1D1E1F;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    width: 25vw;
     height: 50px;
+    margin-top: 20px;
     border-radius: 5px;
+  }
+
+  button:hover {
+    scale: 1.1;
   }
 
   
