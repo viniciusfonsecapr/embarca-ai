@@ -116,7 +116,6 @@ function Home() {
         <Searchbar onSearch={onSearchHandler} />
         {notFound ? (
           <NoCharacters />
-          // <h1>Não encontramos este personagem :\</h1>
         ) : (
           <Cards
             people={peoples}

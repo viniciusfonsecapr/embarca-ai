@@ -3,7 +3,23 @@ import styled from "styled-components";
 export const Container = styled.div`
   border-radius: 10px;
   background-color: #1d1e1f;
- 
+
+  .card-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .subtitle-character {
+    font-size: 14px;
+    color: #fafa73;
+    font-weight: 800;
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+
   div.card-top {
     display: flex;
     flex-direction: column;
@@ -14,7 +30,6 @@ export const Container = styled.div`
     height: 280px;
     gap: 2px;
     margin-bottom: 10px;
-   
   }
 
   div.card-top:hover {
@@ -26,17 +41,9 @@ export const Container = styled.div`
     margin-top: 5px;
     margin-bottom: 25px;
     font-size: 18px;
-    font-weight: 800;
+
     font-family: "Audiowide", serif;
-  font-weight: 400;
-  font-style: normal;
-  }
-  .subtitle-character {
-    text-align: center;
-    font-size: 13px;
     font-weight: 800;
-    font-family: "Audiowide", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-style: normal;
   }
 `;

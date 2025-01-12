@@ -15,7 +15,7 @@ const GuerraNasEstrelasLogo = () => (
         <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle"
             fontFamily="Audiowide, serif" fontSize="12" fill="yellow" fontWeight="bold"
             stroke="white" strokeWidth="1">
-            GUERRAS NAS ESTRELAS
+            STAR WARS
         </text>
 
         {/* Bordas adicionais ajustadas ao tamanho menor */}
