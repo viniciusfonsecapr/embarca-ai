@@ -1,3 +1,4 @@
+"use client"
 import axios from 'axios'
 
 export const searchPeople = async (people) => {
@@ -12,6 +13,10 @@ export const searchPeople = async (people) => {
     } catch (error) {
         console.log("error: cai aqui ", error)
     }
+
+
+
+
 }
 
 export const getPeople = async (people) => {

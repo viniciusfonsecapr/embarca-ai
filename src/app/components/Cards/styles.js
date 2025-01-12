@@ -1,3 +1,4 @@
+"use client"
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -14,8 +15,10 @@ export const Container = styled.div`
 
   div.people-grid {
     display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    width: 180px;
+    margin: 30px;
+    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
     @media (max-width: 900px) {
       grid-template-columns: repeat(2, 1fr);
     }
