@@ -3,19 +3,21 @@ import styled from "styled-components";
 // import Image from '../../images/stars.jpg'
 
 export const Container = styled.div`
-  font-family: 'Audiowide', sans-serif;
+  font-family: "Audiowide", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  background-color: black; 
+  background-color: black;
   height: 100vh;
 
-  div.title-grid{
+  div.title-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     color: white;
-    padding-left: 3vw;
     font-size: 30px;
-   
   }
 
   div.people-grid {
@@ -33,11 +35,7 @@ export const Container = styled.div`
     }
   }
 
-  .header{
-    padding-top: 10px;
-  }
-
- .divLoading{
+  .divLoading {
     margin-top: -10%;
- }
+  }
 `;

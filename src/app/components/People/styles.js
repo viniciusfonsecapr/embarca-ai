@@ -32,7 +32,7 @@ export const Container = styled.div`
   font-style: normal;
   }
   .subtitle-character {
-
+    text-align: center;
     font-size: 13px;
     font-weight: 800;
     font-family: "Audiowide", serif;

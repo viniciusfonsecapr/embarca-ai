@@ -5,8 +5,8 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
   color: white;
-  margin-top: 20px;
   
   button {
     cursor: pointer;
@@ -23,6 +23,6 @@ export const Container = styled.div`
   }
 
   .buttons-page{
-    margin-left: 10px;
+    margin-left: 20px;
   }
 `;
