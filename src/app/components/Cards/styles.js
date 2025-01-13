@@ -10,7 +10,7 @@ export const Container = styled.div`
   background-color: black;
   height: 100vh;
 
-  @media (max-width: 968px) {
+  @media (max-width: 1020px) {
     background-color: black;
     height: 100%;
   }
