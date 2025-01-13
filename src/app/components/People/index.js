@@ -1,9 +1,7 @@
-"use client"
+"use client";
 import React from "react";
 import PropTypes from "prop-types";
 import { Container } from "./styles";
-
-
 
 People.propTypes = {
     people: PropTypes.shape({
@@ -34,8 +32,6 @@ People.defaultProps = {
     },
 };
 
-
-
 export default function People(props) {
     const { people } = props;
 
@@ -43,15 +39,41 @@ export default function People(props) {
         <Container>
             <div className="card-top">
                 {people.name && <div className="name-character">{people.name}</div>}
-                {people.gender && <div className="subtitle-character">Gênero: {people.gender}</div>}
-                {people.height && <div className="subtitle-character">Altura: {people.height} cm</div>}
-                {people.mass && <div className="subtitle-character">Peso: {people.mass} kg</div>}
-                {people.birth_year && <div className="subtitle-character">Aniversário: {people.birth_year}</div>}
-                {people.eye_color && <div className="subtitle-character">Cor dos Olhos: {people.eye_color}</div>}
-                {people.hair_color && <div className="subtitle-character">Cor do Cabelo: {people.hair_color}</div>}
-                {people.skin_color && <div className="subtitle-character">Cor da Pele: {people.skin_color}</div>}
-                {people.species && <div className="subtitle-character">Espécie: {people.species}</div>}
-                {people.homeWorld && <div className="subtitle-character">Planeta: {people.homeWorld}</div>}
+                {people.gender && (
+                    <div className="subtitle-character">Gênero: {people.gender}</div>
+                )}
+                {people.height && (
+                    <div className="subtitle-character">Altura: {people.height} cm</div>
+                )}
+                {people.mass && (
+                    <div className="subtitle-character">Peso: {people.mass} kg</div>
+                )}
+                {people.birth_year && (
+                    <div className="subtitle-character">
+                        Aniversário: {people.birth_year}
+                    </div>
+                )}
+                {people.eye_color && (
+                    <div className="subtitle-character">
+                        Cor dos Olhos: {people.eye_color}
+                    </div>
+                )}
+                {people.hair_color && (
+                    <div className="subtitle-character">
+                        Cor do Cabelo: {people.hair_color}
+                    </div>
+                )}
+                {people.skin_color && (
+                    <div className="subtitle-character">
+                        Cor da Pele: {people.skin_color}
+                    </div>
+                )}
+                {people.species && (
+                    <div className="subtitle-character">Espécie: {people.species}</div>
+                )}
+                {people.homeWorld && (
+                    <div className="subtitle-character">Planeta: {people.homeWorld}</div>
+                )}
             </div>
         </Container>
     );

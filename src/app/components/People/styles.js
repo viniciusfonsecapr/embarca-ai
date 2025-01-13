@@ -4,6 +4,10 @@ export const Container = styled.div`
   border-radius: 10px;
   background-color: #1d1e1f;
 
+  @media (max-width: 400px) {
+    
+  }
+
   .card-top {
     display: flex;
     flex-direction: column;
@@ -41,7 +45,6 @@ export const Container = styled.div`
     margin-top: 5px;
     margin-bottom: 25px;
     font-size: 18px;
-
     font-family: "Audiowide", serif;
     font-weight: 800;
     font-style: normal;

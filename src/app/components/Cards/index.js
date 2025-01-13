@@ -7,9 +7,8 @@ import LoadingSpinner from "../Loading";
 export default function Cards({ people, loading, next, prev }) {
     return (
         <Container>
-            <Pagination onLeftClick={prev} onRightClick={next} />  <div className="title-grid">PERSONAGENS</div>
-
-
+            <Pagination onLeftClick={prev} onRightClick={next} />{" "}
+            <div className="title-grid">PERSONAGENS</div>
             {loading ? (
                 <div className="divLoading">
                     <LoadingSpinner />

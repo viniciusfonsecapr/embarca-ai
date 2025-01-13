@@ -1,6 +1,5 @@
 "use client";
 import styled from "styled-components";
-// import Image from '../../images/stars.jpg'
 
 export const Container = styled.div`
   font-family: "Audiowide", sans-serif;
@@ -10,6 +9,11 @@ export const Container = styled.div`
   line-height: 20px;
   background-color: black;
   height: 100vh;
+
+  @media (max-width: 968px) {
+    background-color: black;
+    height: 100%;
+  }
 
   div.title-grid {
     display: flex;
@@ -22,16 +26,24 @@ export const Container = styled.div`
 
   div.people-grid {
     display: grid;
+    flex-wrap: wrap;
     width: 180px;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-top: 50px;
-    gap: 60px;
+    gap:30px;
     grid-template-columns: repeat(7, 1fr);
     @media (max-width: 900px) {
       grid-template-columns: repeat(3, 1fr);
     }
-    @media (max-width: 600px) {
+    @media (max-width: 400px) {
+      display: grid;
+      width: 50vw;
+      margin-left: 5px;
+      margin-top: 50px;
+      gap: 10px;
       grid-template-columns: repeat(2, 1fr);
+
+     
     }
   }
 

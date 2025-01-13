@@ -11,6 +11,12 @@ export const Container = styled.div`
   font-weight: 400;
   font-style: normal;
 
+  @media (max-width: 768px) {
+    
+
+ 
+}
+
   div {
     display: flex;
     flex-direction: row;
@@ -19,7 +25,7 @@ export const Container = styled.div`
   }
 
   input {
-    width:50vw;
+    width:60vw;
     background-color: #1D1E1F;
     padding-left: 20px;
     border-radius: 5px;
