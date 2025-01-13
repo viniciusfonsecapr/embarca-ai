@@ -69,6 +69,21 @@ npm start: Inicia a aplicação em modo de produção.
 
 npm test:e2e : Executa os testes configurados.
 
+## Testes
+
+O projeto inclui uma configuração básica de testes para garantir a qualidade do código. Para executar os testes, utilize o comando:
+
+npm test:e2e
+
+Configuração de Testes
+
+Os testes estão localizados na pasta cypress/e2e ou em arquivos com a extensão e2e.js
+
+A biblioteca de testes utilizada pode ser configurada no arquivo package.json ou em configurações adicionais do projeto.
+
+Certifique-se de que o ambiente de testes está configurado corretamente antes de executar os testes.
+
+
 ## Build para Produção
 
 Para criar uma versão otimizada da aplicação, execute:
