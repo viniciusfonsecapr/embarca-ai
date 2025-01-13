@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+## Star Wars - Embarca Aí
 
-```bash
+Bem-vindo ao Projeto Star Wars - Embarca Aí! Este é um projeto desenvolvido utilizando Next.js, Styled Components, Cypress e Vercel . Este guia detalhado ajudará você a configurar e executar o projeto em sua máquina local.
+O Star Wars - Embarca.ai é uma plataforma que permite a você pesquisar e obter informações sobre seus personagens favoritos, como nome, idade, peso, cidade que nasceu e por vai. Tendo um descrição completa sobre os mesmos, assim trazendo uma gama ainda maior de informações sobre seu personagem favorito.
+
+## Funcionalidades
+
+Busca de Personagens: Encontre personagens de Star Wars e suas informações.
+
+Demonstração clara e objetiva sobre seu Personagem favorito. 
+
+Busca Individual para Cada Personagem.
+
+## Requisitos
+
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
+
+Node.js: Instale aqui. -> https://nodejs.org/en
+
+npm: Geralmente instalado junto com o Node.js. Verifique executando npm -v no terminal.
+
+Git: Para clonar o repositório. Instale aqui. -> https://git-scm.com/downloads
+
+## Instalação e Execução
+
+1. Clonar o Repositório
+
+No terminal, execute os comandos abaixo:
+
+git clone https://github.com/viniciusfonsecapr/embarca-ai.git
+cd embarca-ai
+
+2. Instalar Dependências
+
+No diretório do projeto, execute:
+
+npm install
+
+Este comando instalará todas as dependências listadas no arquivo package.json.
+
+3. Configurar Variáveis de Ambiente
+
+Se o projeto requer variáveis de ambiente, crie um arquivo .env na raiz do projeto e defina as variáveis necessárias. Consulte a equipe de desenvolvimento para mais detalhes sobre essas variáveis.
+
+4. Executar o Servidor de Desenvolvimento
+
+Para iniciar o servidor de desenvolvimento, execute:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O terminal indicará que o servidor está rodando, geralmente em http://localhost:3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+5. Acessar a Aplicação
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Abra um navegador e acesse:
 
-## Learn More
+http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+Aqui você pode interagir com a aplicação em execução.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Estrutura do Projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Página principal: Localizada em src/app/page.js.
 
-## Deploy on Vercel
+## Framework: O projeto utiliza Next.js, um framework React com renderização do lado do servidor.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Estilização: Utiliza CSS Puro com Styled Components.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Scripts Disponíveis
+
+npm run dev: Inicia o servidor de desenvolvimento.
+
+npm run build: Compila a aplicação para produção.
+
+npm start: Inicia a aplicação em modo de produção.
+
+npm test:e2e : Executa os testes configurados.
+
+## Testes
+
+O projeto inclui uma configuração básica de testes para garantir a qualidade do código. Para executar os testes, utilize o comando:
+
+npm test:e2e
+
+Configuração de Testes
+
+Os testes estão localizados na pasta cypress/e2e ou em arquivos com a extensão e2e.js
+
+A biblioteca de testes utilizada pode ser configurada no arquivo package.json ou em configurações adicionais do projeto.
+
+Certifique-se de que o ambiente de testes está configurado corretamente antes de executar os testes.
+
+
+## Build para Produção
+
+Para criar uma versão otimizada da aplicação, execute:
+
+npm run build
+
+Os arquivos serão gerados na pasta build.
+
+## Deploy
+
+Acesse o projeto online por aqui -> star-wars-embarca-ai.vercel.app
+
+## Contribuição
+
+Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
+
+Faça um fork deste repositório.
+
+Crie uma branch para sua feature ou correção: git checkout -b minha-feature.
+
+Commit suas alterações: git commit -m 'Adiciona minha feature'.
+
+Faça push para a branch: git push origin minha-feature.
+
+Abra um Pull Request.
+
+Para mais detalhes, consulte o arquivo CONTRIBUTING.md.
+
+Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
