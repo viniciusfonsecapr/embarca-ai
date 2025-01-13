@@ -1,12 +1,11 @@
-"use client"
+"use client";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { searchPeople, getPeople } from "./services/api";
 import Cards from "./components/Cards";
 import Searchbar from "./components/Input";
 import GuerraNasEstrelasLogo from "./components/Logo";
-import NoCharacters from './components/NoSearch'
-
+import NoCharacters from "./components/NoSearch";
 
 function Home() {
   const [loading, setLoading] = useState(false);
@@ -20,12 +19,19 @@ function Home() {
       setLoading(true);
       setNotFound(false);
 
-      const data = url ? await fetch(url).then((res) => res.json()) : await getPeople();
+      const data = url
+        ? await fetch(url).then((res) => res.json())
+        : await getPeople();
 
       const results = await Promise.all(
         data.results.map(async (person) => {
-          const homeWorld = person.homeworld ? await getHomeWorld(person.homeworld) : "Desconhecido";
-          const species = person.species.length > 0 ? await getSpecies(person.species[0]) : "Human";
+          const homeWorld = person.homeworld
+            ? await getHomeWorld(person.homeworld)
+            : "Desconhecido";
+          const species =
+            person.species.length > 0
+              ? await getSpecies(person.species[0])
+              : "Human";
           return { ...person, homeWorld, species };
         })
       );
@@ -61,7 +67,6 @@ function Home() {
     }
   };
 
-
   useEffect(() => {
     fetchPeoples();
   }, []);
@@ -91,8 +96,14 @@ function Home() {
       } else {
         const characters = await Promise.all(
           result.results.map(async (person) => {
-            const homeWorld = person.homeworld.length > 0 ? await getHomeWorld(person.homeworld[0]) : "Planet";
-            const species = person.species.length > 0 ? await getSpecies(person.species[0]) : "Human";
+            const homeWorld =
+              person.homeworld.length > 0
+                ? await getHomeWorld(person.homeworld[0])
+                : "Planet";
+            const species =
+              person.species.length > 0
+                ? await getSpecies(person.species[0])
+                : "Human";
             return { ...person, homeWorld, species };
           })
         );
@@ -108,6 +119,7 @@ function Home() {
   };
 
   return (
+
     <div>
       <main className="divMain">
         <div className="logo">

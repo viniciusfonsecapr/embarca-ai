@@ -1,20 +1,19 @@
 import "./globals.css";
-
-
+import { Audiowide } from "next/font/google";
 
 export const metadata = {
   title: "Star Wars - Embarca.ai",
   description: "Stars Wars Book",
 };
 
+const audiowide = Audiowide({
+  subsets: ["latin"],
+  weight: "400",  // Adicione os pesos que você deseja usar
+});
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-br">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
-      </head>
+    <html lang="pt-br" className={audiowide.className}>
       <body>{children}</body>
     </html>
   );

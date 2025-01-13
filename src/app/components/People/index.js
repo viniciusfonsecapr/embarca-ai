@@ -44,8 +44,8 @@ export default function People(props) {
             <div className="card-top">
                 {people.name && <div className="name-character">{people.name}</div>}
                 {people.gender && <div className="subtitle-character">Gênero: {people.gender}</div>}
-                {people.height && <div className="subtitle-character">Altura: {people.height}</div>}
-                {people.mass && <div className="subtitle-character">Peso: {people.mass}</div>}
+                {people.height && <div className="subtitle-character">Altura: {people.height} cm</div>}
+                {people.mass && <div className="subtitle-character">Peso: {people.mass} kg</div>}
                 {people.birth_year && <div className="subtitle-character">Aniversário: {people.birth_year}</div>}
                 {people.eye_color && <div className="subtitle-character">Cor dos Olhos: {people.eye_color}</div>}
                 {people.hair_color && <div className="subtitle-character">Cor do Cabelo: {people.hair_color}</div>}
