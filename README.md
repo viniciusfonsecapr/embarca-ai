@@ -76,13 +76,15 @@ npm run build: Compila a aplicação para produção.
 
 npm start: Inicia a aplicação em modo de produção.
 
-npm test:e2e : Executa os testes configurados.
+npm test: Executa os testes configurados.
 
 ## Testes
 
 O projeto inclui uma configuração básica de testes para garantir a qualidade do código. Para executar os testes, utilize o comando:
 
-npm test:e2e
+npm test
+
+e em seguida rode o projeto junto com npm run dev
 
 Configuração de Testes
 
