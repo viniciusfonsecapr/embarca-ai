@@ -8,11 +8,11 @@ Bem-vindo ao Projeto Star Wars - Embarca Aí! Este é um projeto desenvolvido ut
 
 Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 
-Node.js: Instale aqui.
+Node.js: Instale aqui. -> https://nodejs.org/en
 
 npm: Geralmente instalado junto com o Node.js. Verifique executando npm -v no terminal.
 
-Git: Para clonar o repositório. Instale aqui.
+Git: Para clonar o repositório. Instale aqui. -> https://git-scm.com/downloads
 
 ## Instalação e Execução
 
