@@ -3,6 +3,15 @@
 ## Star Wars - Embarca Aí
 
 Bem-vindo ao Projeto Star Wars - Embarca Aí! Este é um projeto desenvolvido utilizando Next.js, Styled Components, Cypress e Vercel . Este guia detalhado ajudará você a configurar e executar o projeto em sua máquina local.
+O Star Wars - Embarca.ai é uma plataforma que permite a você pesquisar e obter informações sobre seus personagens favoritos, como nome, idade, peso, cidade que nasceu e por vai. Tendo um descrição completa sobre os mesmos, assim trazendo uma gama ainda maior de informações sobre seu personagem favorito.
+
+## Funcionalidades
+
+Busca de Personagens: Encontre personagens de Star Wars e suas informações.
+
+Demonstração clara e objetiva sobre seu Personagem favorito. 
+
+Busca Individual para Cada Personagem.
 
 ## Requisitos
 
@@ -96,6 +105,22 @@ Os arquivos serão gerados na pasta build.
 
  ----- DEPLOY AQUI
 
-Contribuição
+## Contribuição
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
+Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
+
+Faça um fork deste repositório.
+
+Crie uma branch para sua feature ou correção: git checkout -b minha-feature.
+
+Commit suas alterações: git commit -m 'Adiciona minha feature'.
+
+Faça push para a branch: git push origin minha-feature.
+
+Abra um Pull Request.
+
+Para mais detalhes, consulte o arquivo CONTRIBUTING.md.
+
+Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
