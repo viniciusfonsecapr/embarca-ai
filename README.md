@@ -105,7 +105,7 @@ Os arquivos serão gerados na pasta build.
 
 ## Deploy
 
-Acesse o projeto online por aqui -> star-wars-embarca-ai.vercel.app
+Acesse o projeto online por aqui -> https://star-wars-embarca-ai.vercel.app
 
 ## Contribuição
 
